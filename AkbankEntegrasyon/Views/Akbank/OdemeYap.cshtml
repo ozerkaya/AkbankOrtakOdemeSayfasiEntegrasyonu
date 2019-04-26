@@ -1,0 +1,26 @@
+﻿@model AkbankEntegrasyon.Models.AkbankOdemeModel
+@{
+    ViewBag.Title = "OdemeYap";
+}
+
+<form id="paymentForm" method="post" action="@Model.gate">
+    <center>
+        <input type="hidden" name="clientid" value="@Model.clientid" />
+        <input type="hidden" name="amount" value="@Model.amount" />
+        <input type="hidden" name="oid" value="@Model.oid" />
+        <input type="hidden" name="okUrl" value="@Model.okUrl" />
+        <input type="hidden" name="failUrl" value="@Model.failUrl" />
+        <input type="hidden" name="islemtipi" value="@Model.transactionType" />
+        <input type="hidden" name="taksit" value="@Model.instalmentCount" />
+        <input type="hidden" name="rnd" value="@Model.rnd" />
+        <input type="hidden" name="hash" value="@Model.hash" />
+        <input type="hidden" name="currency" value="@Model.currency" />
+        <input type="hidden" name="storetype" value="@Model.storetype" />
+        <input type="hidden" name="refreshtime" value="@Model.refreshtime" />
+        <input type="submit" value="Submit" id="akbank" style="visibility:hidden;" />
+    </center>
+</form>
+<script>
+    document.getElementById("akbank").click();
+</script>
+
