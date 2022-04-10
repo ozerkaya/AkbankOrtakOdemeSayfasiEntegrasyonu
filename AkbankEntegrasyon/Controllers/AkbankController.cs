@@ -9,7 +9,7 @@ namespace AkbankEntegrasyon.Controllers
 {
     public class AkbankController : Controller
     {
-        //www.ozerkaya.info
+        //www.ozerkaya.com
         //Kart Numarası(Visa) : 4355084355084358
         //Kart Numarası(Master Card) : 5571135571135575
         //Son Kullanma Tarihi : 12/26
